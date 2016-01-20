@@ -6,12 +6,12 @@ Summary to understand different ways to export and import in ES6. Almost no expl
 
 | Export Modules | Import Modules | Result |
 | --- | --- | --- |
-| `export const some = 1;` `export const some = 1;` | `import * as h from 'file.js';` | `// h = { some: 1, other: 2 }` |
-| `export const some = 1;` `export const some = 1;` | `import { some, other } from 'file.js';` | `// some = 1;` `// other = 2;` |
-| `export const some = 1;` `export const some = 1;` | `import some from 'file.js';` | `// some is undefined` |
-| `export const some = 1;` `export const some = 1;` `export default some;` | `import * as h from 'file.js';` | `// h = { some: 1, other: 2, default: 1 }` |
-| `export const some = 1;` `export const some = 1;` `export default some;` | `import { some, other } from 'file.js';` | `// some = 1;` `// other = 2;` |
-| `export const some = 1;` `export const some = 1;` `export default some;` | `import any from 'file.js';` | `// some = 1;` |
+| `export const some = 1;` `export const other = 2;` | `import * as h from 'file.js';` | `// h = { some: 1, other: 2 }` |
+| `export const some = 1;` `export const other = 2;` | `import { some, other } from 'file.js';` | `// some = 1;` `// other = 2;` |
+| `export const some = 1;` `export const other = 2;` | `import some from 'file.js';` | `// some is undefined` |
+| `export const some = 1;` `export const other = 2;` `export default some;` | `import * as h from 'file.js';` | `// h = { some: 1, other: 2, default: 1 }` |
+| `export const some = 1;` `export const other = 2;` `export default some;` | `import { some, other } from 'file.js';` | `// some = 1;` `// other = 2;` |
+| `export const some = 1;` `export const other = 2;` `export default some;` | `import any from 'file.js';` | `// some = 1;` |
 
 ---
 ### Without using default
