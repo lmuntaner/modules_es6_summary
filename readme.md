@@ -11,7 +11,7 @@ Summary to understand different ways to export and import in ES6. Almost no expl
 | `export const some = 1;` `export const other = 2;` | `import some from 'file.js';` | `// some is undefined` |
 | `export const some = 1;` `export const other = 2;` `export default some;` | `import * as h from 'file.js';` | `// h = { some: 1, other: 2, default: 1 }` |
 | `export const some = 1;` `export const other = 2;` `export default some;` | `import { some, other } from 'file.js';` | `// some = 1;` `// other = 2;` |
-| `export const some = 1;` `export const other = 2;` `export default some;` | `import any from 'file.js';` | `// some = 1;` |
+| `export const some = 1;` `export const other = 2;` `export default some;` | `import one from 'file.js';` | `// one = 1;` |
 
 ---
 ### Without using default
